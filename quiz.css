@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg);
+  justify-content: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+  
+.logo {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.logo:hover {
+  filter: drop-shadow(2px 3px 20px);
+}
+.container {
+  color: white;
+  width: 650px;
+  height: 80%;
+  padding: 20px;
+  margin-top: 5%;
+  background: rgba(255, 255, 255, 0.067);
+  box-shadow: rgba(141, 139, 139, 0.21) 0px -23px 25px 0px inset,
+    rgba(22, 22, 22, 0.15) 0px -36px 30px 0px inset,
+    rgba(23, 22, 22, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(62, 59, 59, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(34, 33, 33, 0.197) 0px 16px 8px,
+    rgba(125, 122, 122, 0.066) 0px 32px 16px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.048);
+  text-shadow: 0.5px 1px 0.5px rgba(162, 157, 142, 1);
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  color: #00000000;
+  font-size: small;
+  text-shadow: 0.5px 1px 0.5px rgba(162, 157, 142, 1);
+}
+  
+h1 {
+  margin-top: -15px;
+  text-align: center;
+  font-size: 50px;
+}
+h4 {
+  text-align: center;
+  font-size: 20px;
+}
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.options {
+  margin-bottom: 20px;
+  font: size 15px;
+  margin-left: 20px;
+}
+.option {
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  padding: 0 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 0;
+  margin-left: 20px;
+  background-color: hsl(0, 100%, 52%);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 31ms cubic-bezier(0.5, 0.7, 0.4, 1);
+  text-shadow: 0.5px 1px 0.5px rgba(162, 157, 142, 1);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-top: 25px;
+  cursor: pointer;
+}
+button:before {
+  content: attr(alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  opacity: 1;
+}
+.button:active {
+  box-shadow: none;
+  transform: translateY(7px);
+  transition: 35ms cubic-bezier(0.5, 0.7, 0.4, 1);
+}
+.button:hover:before {
+  transition: all 0s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.button i {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-style: normal;
+  transition: all 2s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.button:hover i {
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.button:hover i:nth-child(1) {
+  transition-delay: 0.045s;
+}
+.button:hover i:nth-child(2) {
+  transition-delay: calc(0.045s * 3);
+}
+.button:hover i:nth-child(3) {
+  transition-delay: calc(0.045s * 4);
+}
+.button:hover i:nth-child(4) {
+  transition-delay: calc(0.045s * 5);
+}
+.button:hover i:nth-child(6) {
+  transition-delay: calc(0.045s * 6);
+}
+.button:hover i:nth-child(7) {
+  transition-delay: calc(0.045s * 7);
+}
+.button:hover i:nth-child(8) {
+  transition-delay: calc(0.045s * 8);
+}
+.button:hover i:nth-child(9) {
+  transition-delay: calc(0.045s * 9);
+}
+.button:hover i:nth-child(10) {
+  transition-delay: calc(0.045s * 10);
+}
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
